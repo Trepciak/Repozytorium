@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+        
+    function funkcja() {
+        var wartosc1 = document.forms["formularz"].ford.value;
+        var wartosc2 = document.forms["formularz"].bmw.value;
+        }
+        if(wartosc1=1){
+           document.write("ford mustang-Producent Ford")
+        }
+       else {
+            document.write("BMW 320-Producent BMW")
+        }
+       
+       
+    </script>
+    <form name="formularz">
+        <select name="lista">
+            <option value="1" name="ford" onchange="funkcja()">Ford</option>
+            <option value="2" name="ford" onchange="funkcja()">BMW</option>
+        </select>
+    </form>
